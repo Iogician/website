@@ -10,6 +10,10 @@ h1, h2, h3, p {
   margin-right: 4%;
 }
 
+a {
+  color: #A020F0;
+}
+
 .image-right {
   float: right;
   margin-left: 2%;
