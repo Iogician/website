@@ -6,12 +6,13 @@ h1, h2, h3, p {
   font-weight: <weight>;
   font-style: normal;  
   color: black;
-  margin-left: 80px;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .image-right {
   float: right;
-  margin-left: 15px;
+  margin-left: 4%;
 }
 /* Add a black background color to the top navigation */
 .topnav {
