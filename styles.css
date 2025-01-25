@@ -39,7 +39,3 @@ overflow: hidden;
   background-color: #1F0954;
   color: white;
 }
-
-@media screen and (max-width: 800px) { 
-  .post .sc_image img { display: none; }  
-}
