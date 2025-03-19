@@ -59,7 +59,7 @@ overflow: hidden;
     "header header header header"
     "content content content content"
     "footer footer footer footer";
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 24.1% 24.1% 24.1% 24.1%;
   grid-template-rows: 50% 50%;
   gap: 5px;
   background-color: #2196F3;
