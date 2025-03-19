@@ -47,13 +47,29 @@ overflow: hidden;
   color: white;
 }
 
-.project-box {
-    width: 800px; /* Set the width of the box */
-    height: 400px; /* Set the height of the box */
-    border: 4px solid black; /* Add a border */
-    padding: 10px; /* Add padding inside the box */
-    margin: 20px; /* Add margin outside the box */
-    background-color: white; /* Optional: Add a background color */
-    text-align: center; /* Optional: Center the text inside the box */
-    align-items: center;
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "content content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+  background-color: #2196F3;
+  padding: 5px;
+}
+.container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+}
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container > div.content {
+  grid-area: content;
+}
+.container > div.footer {
+  grid-area: footer;
+  text-align: center;
 }
