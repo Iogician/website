@@ -48,8 +48,8 @@ overflow: hidden;
 }
 
 .project-box {
-    width: 200px; /* Set the width of the box */
-    height: 100px; /* Set the height of the box */
+    width: 800px; /* Set the width of the box */
+    height: 400px; /* Set the height of the box */
     border: 4px solid black; /* Add a border */
     padding: 10px; /* Add padding inside the box */
     margin: 20px; /* Add margin outside the box */
