@@ -14,6 +14,12 @@ a {
   color: #A020F0;
 }
 
+.image-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .image-right {
   float: right;
   margin-left: 2%;
