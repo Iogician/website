@@ -55,4 +55,5 @@ overflow: hidden;
     margin: 20px; /* Add margin outside the box */
     background-color: white; /* Optional: Add a background color */
     text-align: center; /* Optional: Center the text inside the box */
+    align-items: center;
 }
