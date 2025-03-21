@@ -76,7 +76,7 @@ overflow: hidden;
       "header header header header"
       "content content content content"
       "footer footer footer footer";
-    height: 100%;
+    height: 100vh;
     max-width: 100vw;
     box-sizing: border-box;
     align-content: start;
