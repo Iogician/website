@@ -64,14 +64,26 @@ overflow: hidden;
   align-content: start;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;  
-  @media (max-width: 1000px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 100%;
-  }
   gap: 5px;
   background-color: #1F0954;
   padding: 5px;
+}
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "content content content content"
+      "footer footer footer footer";
+    height: 100%;
+    max-width: 100%;
+    align-content: start;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;  
+    gap: 5px;
+    background-color: #1F0954;
+    padding: 5px;
+  }  
 }
 .container > div {
   background-color: rgba(255, 255, 255, 0.8);
