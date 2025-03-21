@@ -60,6 +60,7 @@ overflow: hidden;
     "content content content content"
     "footer footer footer footer";
   height: 60%;
+  max-width: 100%;
   align-content: start;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
