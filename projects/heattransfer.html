@@ -18,3 +18,30 @@
    high altitude flight, particularly in the case of sounding rockets. This
    was especially pertinent due to the volume of rocketry teams at Purdue in addition to the growing popularity of collegiate rocketry across the nation.
 </p>
+<h1>Development</h1>
+<p>
+   We determined two primary methods of heat transfer affecting a sounding rocket:
+   forced convection and conduction. We chose to neglect the effects of radiation for
+   simplicity and due to its presumed negligibility. The rocket experiences forced convection
+   due to the high speeds with which the air contacts the airframe, while the conduction occurs
+   in between the outer and inner airframe walls.<br>
+   This would normally be a simple calculation if the rocket's altitude was fixed, but it is clear
+   that the thermal properties of air will change depending on altitude while the rocket's altitude
+   also behaves variably. For that purpose, the interface utilizes an iterative process that calculates
+   heat transfer and airframe temperature at each time step based on inputted airframe properties and
+   flight trajectory.<br>
+   The governing equations for such an interface include simplified versions of Fourier's law of heat
+   conduction and Newton's law of cooling in addition to compressible flow relations. While the forced
+   convection does contribute some change in thermal characteristics of the airframe, the compressibility
+   effects are even more significant, making the airframe temperature calculations a combination of the
+   two heating methods. The air properties were linearly interpolated from a table provided by Haifeng
+   Wang in his Thermal Sciences textbook, which allowed the ambient air temperature, density, pressure,
+   kinematic viscosity, and specific heat capacity to be precise at any altitude.
+</p>
+<h1>Outcomes</h1>
+<p>To test the accuracy of the interface, we decided to find publications of heat transfer measurements
+   taken during the flights of sounding rockets. When inputting the parameters of the sounding rockets
+   into the interface, we were able to calculate the peak heat flux in MATLAB with ~7% error when compared to
+   the actual peak heat flux in the publication. Of course, this simulation could be completed in 5 seconds or less,
+   essentially leading to a potential simulation time reduction of 90% or more.
+</p>
