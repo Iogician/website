@@ -14,14 +14,15 @@
    students are tasked with creating a project that will address a pressing
    thermal sciences issue.<br><br>
    With Anish Agarwal, Shreesh Nalatwad, Noah Smith, and Will Stupart,
-   we chose to create an interface capable of estimating heat transfer for
-   high altitude flight, particularly in the case of sounding rockets. This
+   we chose to create an interface capable of estimating heat transfer and
+   approximating necessary insulation thickness to protect internals for
+   high altitude flight vehicles, particularly in the case of sounding rockets. This
    was especially pertinent due to the volume of rocketry teams at Purdue in addition to the growing popularity of collegiate rocketry across the nation.
 </p>
 <h1>Development</h1>
 <p>
-   We determined two primary methods of heat transfer affecting a sounding rocket:
-   forced convection and conduction. We chose to neglect the effects of radiation for
+   We determined three primary methods of heat transfer affecting a sounding rocket:
+   forced convection, convection due to compressibility effects, and conduction. We chose to neglect the effects of radiation for
    simplicity and due to its presumed negligibility. The rocket experiences forced convection
    due to the high speeds with which the air contacts the airframe, while the conduction occurs
    in between the outer and inner airframe walls.<br><br>
@@ -31,9 +32,9 @@
    heat transfer and airframe temperature at each time step based on inputted airframe properties and
    flight trajectory.<br><br>
    The governing equations for such an interface include simplified versions of Fourier's law of heat
-   conduction and Newton's law of cooling in addition to compressible flow relations. While the forced
-   convection does contribute some change in thermal characteristics of the airframe, the compressibility
-   effects are even more significant, making the airframe temperature calculations a combination of the
+   conduction and Newton's law of cooling in addition to compressible flow relations. While forced
+   convection due solely to airflow does contribute some change in thermal characteristics of the airframe, the compressibility
+   effects are even more significant, making the outer airframe temperature calculations a combination of the
    two heating methods. The air properties were linearly interpolated from a table provided by Haifeng
    Wang in his Thermal Sciences textbook, which allowed the ambient air temperature, density, pressure,
    kinematic viscosity, and specific heat capacity to be precise at any altitude.
