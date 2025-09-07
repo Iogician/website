@@ -90,6 +90,7 @@ overflow: hidden;
       "content content content content"
       "footer footer footer footer";
     height: auto;
+    width: auto;
     max-width: 100vw;
     box-sizing: border-box;
     align-content: start;
