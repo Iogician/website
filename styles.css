@@ -80,7 +80,7 @@ overflow: hidden;
   grid-template-rows: 1fr 1fr 1fr;  
   gap: 5px;
   background-color: ;
-  padding: 5px;
+  padding: 50px;
 }
 @media (max-width: 768px) {
   .container {
