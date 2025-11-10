@@ -69,17 +69,17 @@ overflow: hidden;
 .container {
   display: grid;
   grid-template-areas:
-    "header header header header"
-    "content content content content"
-    "footer footer footer footer";
+    "header header header"
+    "content content content"
+    "footer footer footer";
   height: auto;
   max-width: 100vw;
   box-sizing: border-box;
   align-content: start;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;  
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;  
   gap: 5px;
-  background-color: #1F0954;
+  background-color: ;
   padding: 5px;
 }
 @media (max-width: 768px) {
