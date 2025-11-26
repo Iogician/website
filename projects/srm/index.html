@@ -9,11 +9,36 @@
   <a class="active" href="/projects/srm">SRM</a></h1>
 </div>
 <h1>Solid Rocket Motor Design and Analysis</h1>
-<h2>Summary</h2>
+<h2>Premise</h2>
 <p>
-   A custom solid rocket motor utilizing a three-point star port geometry is currently being mixed and prepared at Maurice J. Zucrow Laboratories for use in a model rocket
-   that will launch in mid-November 2025 and allow us to validate the accuracy of our ballistics and trajectory simulations. The grain geometry, chosen for its high volume loading,
-   was designed in SolidWorks and is estimated to be 4.6" x 1.212" in length and diameter respectively. From ballistics simulations, this H91 class motor is expected to produce
-   around 258.70 Ns of impulse for a burn time of 2.79 seconds while still providing a 1.390 safety factor for maximum chamber pressure.<br><br>
-   This page is still under construction. More information will be provided as the project progresses.
+   <img src="patrick_rocket_launch.jpg" alt="Rocket Launch" class="image-right" width="200" height="auto">
+   As part of the Rocket Propulsion (<a href="https://catalog.purdue.edu/preview_course_nopop.php?catoid=15&coid=153584" target="_blank">AAE 43900</a>) curriculum at Purdue University,
+   students are tasked with designing their own solid rocket motor with the intent of validating their ballistics models and trajectory estimations via a rocket launch. Each group's design
+   was constrained such that the maximum estimated operating pressure of the motor could not exceed 800 psi and the propellant grain itself had to be 4.600" x 1.212". The motor would be
+   manufactured by using the empty casing of a Loki Research H100-SF motor and filling it with a grain casted from ammonium perchlorate composite propellant (APCP) at Maurice J. Zucrow Laboratories.
+</p>
+<h2>Development</h2>
+<p>
+   <img src="threepointstarport_regressionanimation.gif" alt="Grain Regression Animation" class="image-right" width="200" height="auto">
+   <img src="patrick_rocket.jpg" alt="Model Rocket on Launch Rail" class="image-right" width="200" height="auto">
+   To maximize volume loading, I proposed a three-point star grain geometry to my group. Testing a rocket motor made from a three-point star grain had a few benefits: it seemed like it would promise
+   high impulse, it was unique and had not been showcased in prior literature, and it subsequently would allow us to make a comparison to the other star-shaped grains with more points.<br><br>
+   I utilized openMotor to simulate the behavior of the three-point star grain and found it would produce around 258.70 Ns of impulse for a burn time of 2.79 seconds while still providing a 1.390 
+   safety factor for maximum chamber pressure. This meant that the motor would have a H91 classification. I was then able to export the ballistics data into a .csv file, where it could be imported
+   into MATLAB and OpenRocket for subsequent trajectory estimations. Initially, we had assumed that there would be insignificant amounts of wind on the day of the launch, and only simulated our
+   rocket's trajectory for 7.5 mph winds. This yielded an apogee prediction of 3374 ft, and our MATLAB model was able to get within 0.05% of OpenRocket's simulation for this wind speed.<br><br>
+   To test our rocket motor, we constructed a LOC Precision PK-51 Fantom model rocket that utilized a custom recovery system designed by associates from Zucrow Laboratories since our rocket motor was
+   plugged. Components were joined together with epoxy, and the entire rocket was later spray painted to make it more visible and to add aesthetic appeal.
+</p>
+<h2>Outcomes</h2>
+<p>
+   <video width="576" height="754" controls>
+     <source src="patrick_rocket_launch_sequence.mp4" type="video/mp4">
+   Your browser does not support the video tag.
+   </video>   
+   <img src="patrick_rocket_recovered.jpg" alt="Model Rocket Recovery" class="image-right" width="200" height="auto">
+   The launch date was moved twice due to complications and bad weather, but the rocket was finally launched on November 15 despite 25 mph winds. Because of the high winds, our rocket was only capable
+   of reaching an apogee of 1302 ft as opposed to the 3374 ft apogee we had predicted under the pretense of reasonable weather. Motor chamber pressure data is still being processed, and a new prediction will be made
+   by our group for apogee once we take the higher wind speed into account. Our group was fortunate enough to have recovered our rocket thanks to our supervisors' suggestion to add airbrakes to reduce
+   launch distance, although this was likely a major detriment to our diminished apogee as well.
 </p>
