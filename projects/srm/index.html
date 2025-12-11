@@ -33,8 +33,12 @@
      <source src="patrick_rocket_launch_sequence.mp4" type="video/mp4">
    Your browser does not support the video tag.
    </video><br>
-   The launch date was moved twice due to complications and bad weather, but the rocket was finally launched on November 15 despite 25 mph winds. Because of the high winds, our rocket was only capable
-   of reaching an apogee of 1302 ft as opposed to the 3374 ft apogee we had predicted under the pretense of reasonable weather. Motor chamber pressure data is still being processed, and a new prediction will be made
-   by our group for apogee once we take the higher wind speed into account. Our group was fortunate enough to have recovered our rocket thanks to our supervisors' suggestion to add airbrakes to reduce
-   launch distance, although this was likely a major detriment to our diminished apogee as well.
+   The launch date was moved twice due to complications and bad weather, but the rocket was finally launched on November 15 despite 20 mph winds. Because of the high winds, our rocket was only capable
+   of reaching an apogee of 1302 ft as opposed to the 3374 ft apogee we had predicted under the pretense of reasonable weather. Based on data obtained from a pressure transducer and altimeter in the rocket,
+   our maximum chamber pressure prediction was within 3% of the measured peak chamber pressure. Our trajectory prediction, when adjusted for 20 mph winds rather than 7.5 mph winds, was within 2%
+   of the apogee obtained from the onboard altimeter.<br><br>
+   The most difficult aspect of the prediction was adjusting the coefficient of drag value for our rocket in our trajectory analysis. This is because on the day of the launch, 
+   our supervisors recommended we glue makeshift airbrakes onto our rocket's airframe to mitigate lateral drift from the wind and make recovery easier. However, the properties and dimenions of these airbrakes
+   airbrakes were unknown and were not ever measured since they had detached from the rocket during the flight. We decided to try to model the airbrakes as thick fins in OpenRocket, which allowed us
+   to get a reasonable estimate for the reference area and coefficient of drag of the rocket with the airbrakes attached. However, this seems to be the largest source of error for the MATLAB trajectory simulation.
 </p>
