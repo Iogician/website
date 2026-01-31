@@ -21,17 +21,14 @@
 </p>
 <h2>Development</h2>
 <p>
-   <img src="GEMUS_ver0_wing_template.png" alt="GEMUS Wing Template" class="image-center" width="750" height="auto">
-   <img src="GEMUS_ver0_linkages.jpg" alt="Uneven Four-Bar Linkage" class="image-right" width="200" height="auto">
-   The current flapping wing vehicle prototype, denoted as version 0, has a wingspan of 0.98 m and a chord length of 0.186 m. The semi-elliptical wing was fabricated by using a printed template from a wide-format printer
+   <img src="GEMUS_ver2_wing_template.png" alt="GEMUS Wing Template" class="image-center" width="750" height="auto">
+   The current flapping wing vehicle prototype, denoted as version 2, has a wingspan of 1.215 m and a chord length of 0.3094 m. The semi-elliptical wing was fabricated by using a printed template from a wide-format printer
    to guide a rotary fabric cutter through ripstop nylon fabric. The template, designed by me, is a CAD drawing with hidden edges visible to mark accurate carbon fiber spar placements for
    assembly of the wing. The paper template, along with 3D printed spacers for the spars and heat-activated adhesive strips allow for a wing to be fabricated and assembled in around 2-3 hours.
-   In the future, a new template will be utilized that has a span of 1.325 m and a chord length of 0.3 m.<br><br>
-   Version 0's wings are driven by two ProModeler DS635BLHV servos whose rotations are transferred to the wing roots via an uneven four-bar linkage that effectively doubles the
-   output angular velocity of each wing without the use of gears. The fuselage and wing-driving linkages are additively manufactured via
-   fused deposition modeling with PLA filament. For the next version, we intend to select a faster servo to enable higher flapping frequencies above 5 Hz, but are still
-   undergoing simulations in Ansys Fluent (k-ω transient solver) to estimate the torque required for one flapping cycle. The robot is controlled using the CrazyFlie system,
-   while force transducer data is collected from an ATI Mini40-E.
+   In the future, a new template will be utilized that has a span approaching 1.5 m instead.<br><br>
+   Version 2's wings are directly driven by two KST X15-1809 servos, which were specified through an Ansys Fluent k-ω transient solver that allowed us to estimate the aerodynamic torque
+   exerted on the wing and thus determine how much torque was necessary to flap the wings. The fuselage and wing-driving linkages are additively manufactured via
+   fused deposition modeling with PLA filament. The robot is controlled using the CrazyFlie system, while force transducer data is collected from an ATI Mini40-E.
 </p>
 <h2>Outcomes</h2>
 <p>
