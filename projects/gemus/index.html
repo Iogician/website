@@ -12,7 +12,7 @@
 <h1>Hyun Research Program: GEMUS Flapping Wing Vehicle</h1>
 <h2>Premise</h2> <img src="dynamicsoaring.jpg" alt="Dynamic Soaring Diagram" class="image-right" width="200" height="auto">
 <p>
-   Under the advising of Dr. Nak-seung Patrick Hyun and alongside Jeffery Zhou and Gilbert Chang, a gliding-enabled, mode-switching, unmanned sensing (GEMUS) flapping wing vehicle 
+   Under the advising of Dr. Nak-seung Patrick Hyun and alongside Jeffery Zhou, Gilbert Chang, and Logan Dihel, a gliding-enabled, mode-switching, unmanned sensing (GEMUS) flapping wing vehicle 
    is being developed as a control system development platform to better understand how birds with high aspect ratio wings are able to conserve energy when faced via dynamic soaring. This
    is of particular interest because flapping wing vehicles have not previously been experimentally proven to be capable of dynamic soaring via the Rayleigh cycle. A large-scale robot with a
    high aspect ratio would be capable of high endurance during flight thanks to its ability to both glide and flap effectively without requiring high flapping frequencies, which are characteristics
@@ -24,8 +24,10 @@
    <img src="GEMUS_ver2_wing_template.png" alt="GEMUS Wing Template" class="image-center" width="750" height="auto">
    The current flapping wing vehicle prototype, denoted as version 2, has a wingspan of 1.215 m and a chord length of 0.3094 m. The semi-elliptical wing was fabricated by using a printed template from a wide-format printer
    to guide a rotary fabric cutter through ripstop nylon fabric. The template, designed by me, is a CAD drawing with hidden edges visible to mark accurate carbon fiber spar placements for
-   assembly of the wing. The paper template, along with 3D printed spacers for the spars and heat-activated adhesive strips allow for a wing to be fabricated and assembled in around 2-3 hours.
-   In the future, a new template will be utilized that has a span approaching 1.5 m instead.<br><br>
+   assembly of the wing. The paper template, along with 3D printed spacers for the spars and nylon repair patches as adhesive strips allow for a wing to be fabricated and assembled in around 2 hours.
+   In the future, a new template will be utilized that has a span approaching 1.5 m instead. An XFLR5 panel method analysis drove us to select the AS6098 airfoil to serve as the rib cross-section
+   near the wing root, as it appeared to perform the best at high angles of attack which will allow for the robot to perform aerobatic maneuvers. The rest of the wing is effectively a flat plate,
+   in which the lack of a dedicated rib allows for immense amounts of twisting which bodes very well for thrust production during flapping.<br><br>
    Version 2's wings are directly driven by two KST X15-1809 servos, which were specified through an Ansys Fluent k-ω transient solver that allowed us to estimate the aerodynamic torque
    exerted on the wing and thus determine how much torque was necessary to flap the wings. The fuselage and wing-driving linkages are additively manufactured via
    fused deposition modeling with PLA filament. The robot is controlled using the CrazyFlie system, while force transducer data is collected from an ATI Mini40-E.
